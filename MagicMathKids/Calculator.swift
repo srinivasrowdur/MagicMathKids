@@ -9,7 +9,17 @@ import SwiftUI
 
 struct Calculator: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Spacer()
+            Text("0")
+                .padding()
+                .foregroundColor(Color.white)
+                .frame(maxWidth: .infinity, alignment: .trailing)
+                .font(.system(size: 88, weight: .light))
+                .lineLimit(1)
+                .minimumScaleFactor(0.2)
+        }
+        .background(Color.black)
     }
 }
 
