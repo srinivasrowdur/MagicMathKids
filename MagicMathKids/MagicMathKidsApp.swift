@@ -11,7 +11,7 @@ import SwiftUI
 struct MagicMathKidsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Calculator()
         }
     }
 }
