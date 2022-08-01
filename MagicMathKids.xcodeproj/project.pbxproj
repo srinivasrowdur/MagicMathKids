@@ -18,6 +18,7 @@
 		ACA5C9AA2897F45600FBB4CF /* CalculatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5C9A92897F45600FBB4CF /* CalculatorButton.swift */; };
 		ACA5C9AC2897F9E200FBB4CF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5C9AB2897F9E200FBB4CF /* Constants.swift */; };
 		ACA5C9B02898231700FBB4CF /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5C9AF2898231700FBB4CF /* Calculator.swift */; };
+		ACA5C9B22898237F00FBB4CF /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5C9B12898237F00FBB4CF /* CalculatorViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		ACA5C9A92897F45600FBB4CF /* CalculatorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButton.swift; sourceTree = "<group>"; };
 		ACA5C9AB2897F9E200FBB4CF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		ACA5C9AF2898231700FBB4CF /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		ACA5C9B12898237F00FBB4CF /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			children = (
 				ACA5C9A82897F3F900FBB4CF /* Components */,
 				ACA5C99B289698FC00FBB4CF /* CalculatorView.swift */,
+				ACA5C9B12898237F00FBB4CF /* CalculatorViewModel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				ACA5C9AA2897F45600FBB4CF /* CalculatorButton.swift in Sources */,
 				ACA5C98E289698DB00FBB4CF /* MagicMathKidsApp.swift in Sources */,
 				ACA5C9A0289699F000FBB4CF /* ButtonType.swift in Sources */,
+				ACA5C9B22898237F00FBB4CF /* CalculatorViewModel.swift in Sources */,
 				ACA5C9A72897EF0400FBB4CF /* CalculatorButtonStyle.swift in Sources */,
 				ACA5C9B02898231700FBB4CF /* Calculator.swift in Sources */,
 				ACA5C99C289698FC00FBB4CF /* CalculatorView.swift in Sources */,
