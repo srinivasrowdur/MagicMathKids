@@ -140,6 +140,13 @@ struct Calculator {
     
     mutating func allClear() {
         
+        newNumber = nil
+                expression = nil
+                result = nil
+                carryingNegative = false
+                carryingDecimal = false
+                carryingZeroCount = 0
+        
     }
     
     mutating func clear() {
