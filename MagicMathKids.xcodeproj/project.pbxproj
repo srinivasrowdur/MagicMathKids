@@ -19,7 +19,18 @@
 		ACA5C9AC2897F9E200FBB4CF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5C9AB2897F9E200FBB4CF /* Constants.swift */; };
 		ACA5C9B02898231700FBB4CF /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5C9AF2898231700FBB4CF /* Calculator.swift */; };
 		ACA5C9B22898237F00FBB4CF /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5C9B12898237F00FBB4CF /* CalculatorViewModel.swift */; };
+		ACA5C9BB2898526B00FBB4CF /* MagicMathKidsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5C9BA2898526B00FBB4CF /* MagicMathKidsTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACA5C9BC2898526B00FBB4CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACA5C982289698DB00FBB4CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACA5C989289698DB00FBB4CF;
+			remoteInfo = MagicMathKids;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		ACA5C98A289698DB00FBB4CF /* MagicMathKids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicMathKids.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,10 +47,19 @@
 		ACA5C9AF2898231700FBB4CF /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		ACA5C9B12898237F00FBB4CF /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
 		ACA5C9B328982BB200FBB4CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		ACA5C9B82898526A00FBB4CF /* MagicMathKidsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicMathKidsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA5C9BA2898526B00FBB4CF /* MagicMathKidsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicMathKidsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		ACA5C987289698DB00FBB4CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA5C9B52898526A00FBB4CF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -53,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				ACA5C98C289698DB00FBB4CF /* MagicMathKids */,
+				ACA5C9B92898526B00FBB4CF /* MagicMathKidsTests */,
 				ACA5C98B289698DB00FBB4CF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				ACA5C98A289698DB00FBB4CF /* MagicMathKids.app */,
+				ACA5C9B82898526A00FBB4CF /* MagicMathKidsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +147,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		ACA5C9B92898526B00FBB4CF /* MagicMathKidsTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACA5C9BA2898526B00FBB4CF /* MagicMathKidsTests.swift */,
+			);
+			path = MagicMathKidsTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +175,24 @@
 			productReference = ACA5C98A289698DB00FBB4CF /* MagicMathKids.app */;
 			productType = "com.apple.product-type.application";
 		};
+		ACA5C9B72898526A00FBB4CF /* MagicMathKidsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACA5C9BE2898526B00FBB4CF /* Build configuration list for PBXNativeTarget "MagicMathKidsTests" */;
+			buildPhases = (
+				ACA5C9B42898526A00FBB4CF /* Sources */,
+				ACA5C9B52898526A00FBB4CF /* Frameworks */,
+				ACA5C9B62898526A00FBB4CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACA5C9BD2898526B00FBB4CF /* PBXTargetDependency */,
+			);
+			name = MagicMathKidsTests;
+			productName = MagicMathKidsTests;
+			productReference = ACA5C9B82898526A00FBB4CF /* MagicMathKidsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -157,6 +205,10 @@
 				TargetAttributes = {
 					ACA5C989289698DB00FBB4CF = {
 						CreatedOnToolsVersion = 14.0;
+					};
+					ACA5C9B72898526A00FBB4CF = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = ACA5C989289698DB00FBB4CF;
 					};
 				};
 			};
@@ -174,6 +226,7 @@
 			projectRoot = "";
 			targets = (
 				ACA5C989289698DB00FBB4CF /* MagicMathKids */,
+				ACA5C9B72898526A00FBB4CF /* MagicMathKidsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -185,6 +238,13 @@
 			files = (
 				ACA5C995289698DE00FBB4CF /* Preview Assets.xcassets in Resources */,
 				ACA5C992289698DE00FBB4CF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA5C9B62898526A00FBB4CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +268,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACA5C9B42898526A00FBB4CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA5C9BB2898526B00FBB4CF /* MagicMathKidsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACA5C9BD2898526B00FBB4CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACA5C989289698DB00FBB4CF /* MagicMathKids */;
+			targetProxy = ACA5C9BC2898526B00FBB4CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		ACA5C996289698DE00FBB4CF /* Debug */ = {
@@ -385,6 +461,42 @@
 			};
 			name = Release;
 		};
+		ACA5C9BF2898526B00FBB4CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8C4V5Y6W3A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rowdur.MagicMathKidsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagicMathKids.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MagicMathKids";
+			};
+			name = Debug;
+		};
+		ACA5C9C02898526B00FBB4CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8C4V5Y6W3A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rowdur.MagicMathKidsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagicMathKids.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MagicMathKids";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -402,6 +514,15 @@
 			buildConfigurations = (
 				ACA5C999289698DE00FBB4CF /* Debug */,
 				ACA5C99A289698DE00FBB4CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACA5C9BE2898526B00FBB4CF /* Build configuration list for PBXNativeTarget "MagicMathKidsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA5C9BF2898526B00FBB4CF /* Debug */,
+				ACA5C9C02898526B00FBB4CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
