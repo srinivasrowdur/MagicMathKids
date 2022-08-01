@@ -75,6 +75,20 @@ struct Calculator {
     
     mutating func setPercent() {
         
+        // 1.
+        if let number = newNumber {
+        // 2.
+            newNumber = number / 100
+            return
+        }
+                
+        // 1.
+        if let number = result {
+        // 2.
+            result = number / 100
+            return
+        }
+        
     }
     
     mutating func setDecimal() {
@@ -82,6 +96,14 @@ struct Calculator {
     }
     
     mutating func evaluate() {
+        
+        // 1.
+        guard let number = newNumber, let expressionToEvaluate = expression else { return }
+        // 2.
+        result = expressionToEvaluate.evaluate(with: number)
+        // 3.
+        expression = nil
+        newNumber = nil
         
     }
     
