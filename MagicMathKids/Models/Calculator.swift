@@ -9,7 +9,27 @@ import Foundation
 
 struct Calculator {
     
+    private struct ArithmeticExpression: Equatable {
+           var number: Decimal
+           var operation: ArithmeticOperation
+
+           func evaluate(with secondNumber: Decimal) -> Decimal {
+               switch operation {
+               case .addition:
+                   return number + secondNumber
+               case .subtraction:
+                   return number - secondNumber
+               case .multiplication:
+                   return number * secondNumber
+               case .division:
+                   return number / secondNumber
+               }
+           }
+       }
+    
     private var newNumber: Decimal?
+    private var expression: ArithmeticExpression?
+    private var result: Decimal?
     
     // MARK: - COMPUTED PROPERTIES
     var displayText: String {
@@ -18,7 +38,7 @@ struct Calculator {
     
     /// Current displaying number
        private var number: Decimal? {
-           newNumber
+           newNumber ?? expression?.number ?? result
        }
     
     // MARK: - OPERATIONS
@@ -35,6 +55,17 @@ struct Calculator {
     }
     
     mutating func setOperation(_ operation: ArithmeticOperation) {
+        
+        // 1.
+        guard var number = newNumber ?? result else { return }
+        // 2.
+        if let existingExpression = expression {
+            number = existingExpression.evaluate(with: number)
+            }
+        // 3.
+        expression = ArithmeticExpression(number: number, operation: operation)
+        // 4.
+        newNumber = nil
         
     }
     
@@ -70,4 +101,9 @@ struct Calculator {
         private func canAddDigit(_ digit: Digit) -> Bool {
             return number != nil || digit != .zero
         }
+    
+    func operationIsHighlighted(_ operation: ArithmeticOperation) -> Bool {
+            return expression?.operation == operation && newNumber == nil
+        }
 }
+
