@@ -38,6 +38,7 @@ struct Calculator {
     private var result: Decimal?
     private var carryingNegative: Bool = false
     private var carryingDecimal: Bool = false
+    private var carryingZeroCount: Int = 0
     
     // MARK: - COMPUTED PROPERTIES
     var displayText: String {
@@ -57,12 +58,14 @@ struct Calculator {
     
     mutating func setDigit(_ digit: Digit) {
         
-        // 1.
-        guard canAddDigit(digit) else { return }
-        // 2.
-        let numberString = getNumberString(forNumber: newNumber)
-        // 3.
-        newNumber = Decimal(string: numberString.appending("\(digit.rawValue)"))
+        if containsDecimal && digit == .zero {
+            carryingZeroCount += 1
+        } else if canAddDigit(digit) {
+          
+            let numberString = getNumberString(forNumber: newNumber)
+         
+            newNumber = Decimal(string: numberString.appending("\(digit.rawValue)"))
+        }
 
     }
     
@@ -149,6 +152,14 @@ struct Calculator {
 
                     if carryingNegative {
                         numberString.insert("-", at: numberString.startIndex)
+                    }
+            
+                    if carryingDecimal {
+                        numberString.insert(".", at: numberString.endIndex)
+                    }
+                    
+                    if carryingZeroCount > 0 {
+                        numberString.append(String(repeating: "0", count: carryingZeroCount))
                     }
 
                     return numberString
