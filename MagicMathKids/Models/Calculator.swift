@@ -30,6 +30,7 @@ struct Calculator {
     private var newNumber: Decimal?
     private var expression: ArithmeticExpression?
     private var result: Decimal?
+    private var carryingNegative: Bool = false
     
     // MARK: - COMPUTED PROPERTIES
     var displayText: String {
@@ -70,6 +71,17 @@ struct Calculator {
     }
     
     mutating func toggleSign() {
+        
+        if let number = newNumber {
+                    newNumber = -number
+                    return
+                }
+                if let number = result {
+                    result = -number
+                    return
+                }
+
+                carryingNegative.toggle()
         
     }
     
