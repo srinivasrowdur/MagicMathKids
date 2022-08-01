@@ -16,6 +16,7 @@
 		ACA5C9A428969A1700FBB4CF /* ArithmeticOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5C9A328969A1700FBB4CF /* ArithmeticOperation.swift */; };
 		ACA5C9A72897EF0400FBB4CF /* CalculatorButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5C9A62897EF0400FBB4CF /* CalculatorButtonStyle.swift */; };
 		ACA5C9AA2897F45600FBB4CF /* CalculatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5C9A92897F45600FBB4CF /* CalculatorButton.swift */; };
+		ACA5C9AC2897F9E200FBB4CF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5C9AB2897F9E200FBB4CF /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		ACA5C9A328969A1700FBB4CF /* ArithmeticOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticOperation.swift; sourceTree = "<group>"; };
 		ACA5C9A62897EF0400FBB4CF /* CalculatorButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButtonStyle.swift; sourceTree = "<group>"; };
 		ACA5C9A92897F45600FBB4CF /* CalculatorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButton.swift; sourceTree = "<group>"; };
+		ACA5C9AB2897F9E200FBB4CF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +63,11 @@
 		ACA5C98C289698DB00FBB4CF /* MagicMathKids */ = {
 			isa = PBXGroup;
 			children = (
+				ACA5C98D289698DB00FBB4CF /* MagicMathKidsApp.swift */,
+				ACA5C9AB2897F9E200FBB4CF /* Constants.swift */,
 				ACA5C9A52897EEEA00FBB4CF /* Styles */,
 				ACA5C99E289699C100FBB4CF /* Models */,
 				ACA5C99D289699BA00FBB4CF /* Views */,
-				ACA5C98D289698DB00FBB4CF /* MagicMathKidsApp.swift */,
 				ACA5C991289698DE00FBB4CF /* Assets.xcassets */,
 				ACA5C993289698DE00FBB4CF /* Preview Content */,
 			);
@@ -191,6 +194,7 @@
 				ACA5C9A72897EF0400FBB4CF /* CalculatorButtonStyle.swift in Sources */,
 				ACA5C99C289698FC00FBB4CF /* Calculator.swift in Sources */,
 				ACA5C9A2289699FA00FBB4CF /* Digit.swift in Sources */,
+				ACA5C9AC2897F9E200FBB4CF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

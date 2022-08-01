@@ -49,12 +49,7 @@ extension Calculator {
             ForEach(buttonTypes, id: \.self) { row in
                 HStack {
                     ForEach(row, id: \.self) { buttonType in
-                        Button(buttonType.description) { }
-                            .buttonStyle(CalculatorButtonStyle(
-                                size: 80,
-                                backgroundColor: buttonType.backgroundColor,
-                                foregroundColor: buttonType.foregroundColor)
-                            )
+                        CalculatorButton(buttonType: buttonType)
                     }
                 }
             }
