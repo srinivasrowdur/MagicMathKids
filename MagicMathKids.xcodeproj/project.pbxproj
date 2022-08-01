@@ -10,13 +10,14 @@
 		ACA5C98E289698DB00FBB4CF /* MagicMathKidsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5C98D289698DB00FBB4CF /* MagicMathKidsApp.swift */; };
 		ACA5C992289698DE00FBB4CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA5C991289698DE00FBB4CF /* Assets.xcassets */; };
 		ACA5C995289698DE00FBB4CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA5C994289698DE00FBB4CF /* Preview Assets.xcassets */; };
-		ACA5C99C289698FC00FBB4CF /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5C99B289698FC00FBB4CF /* Calculator.swift */; };
+		ACA5C99C289698FC00FBB4CF /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5C99B289698FC00FBB4CF /* CalculatorView.swift */; };
 		ACA5C9A0289699F000FBB4CF /* ButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5C99F289699F000FBB4CF /* ButtonType.swift */; };
 		ACA5C9A2289699FA00FBB4CF /* Digit.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5C9A1289699FA00FBB4CF /* Digit.swift */; };
 		ACA5C9A428969A1700FBB4CF /* ArithmeticOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5C9A328969A1700FBB4CF /* ArithmeticOperation.swift */; };
 		ACA5C9A72897EF0400FBB4CF /* CalculatorButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5C9A62897EF0400FBB4CF /* CalculatorButtonStyle.swift */; };
 		ACA5C9AA2897F45600FBB4CF /* CalculatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5C9A92897F45600FBB4CF /* CalculatorButton.swift */; };
 		ACA5C9AC2897F9E200FBB4CF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5C9AB2897F9E200FBB4CF /* Constants.swift */; };
+		ACA5C9B02898231700FBB4CF /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5C9AF2898231700FBB4CF /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,13 +25,14 @@
 		ACA5C98D289698DB00FBB4CF /* MagicMathKidsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicMathKidsApp.swift; sourceTree = "<group>"; };
 		ACA5C991289698DE00FBB4CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACA5C994289698DE00FBB4CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		ACA5C99B289698FC00FBB4CF /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		ACA5C99B289698FC00FBB4CF /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 		ACA5C99F289699F000FBB4CF /* ButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonType.swift; sourceTree = "<group>"; };
 		ACA5C9A1289699FA00FBB4CF /* Digit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digit.swift; sourceTree = "<group>"; };
 		ACA5C9A328969A1700FBB4CF /* ArithmeticOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticOperation.swift; sourceTree = "<group>"; };
 		ACA5C9A62897EF0400FBB4CF /* CalculatorButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButtonStyle.swift; sourceTree = "<group>"; };
 		ACA5C9A92897F45600FBB4CF /* CalculatorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButton.swift; sourceTree = "<group>"; };
 		ACA5C9AB2897F9E200FBB4CF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ACA5C9AF2898231700FBB4CF /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				ACA5C9A82897F3F900FBB4CF /* Components */,
-				ACA5C99B289698FC00FBB4CF /* Calculator.swift */,
+				ACA5C99B289698FC00FBB4CF /* CalculatorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -97,6 +99,7 @@
 				ACA5C99F289699F000FBB4CF /* ButtonType.swift */,
 				ACA5C9A1289699FA00FBB4CF /* Digit.swift */,
 				ACA5C9A328969A1700FBB4CF /* ArithmeticOperation.swift */,
+				ACA5C9AF2898231700FBB4CF /* Calculator.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -192,7 +195,8 @@
 				ACA5C98E289698DB00FBB4CF /* MagicMathKidsApp.swift in Sources */,
 				ACA5C9A0289699F000FBB4CF /* ButtonType.swift in Sources */,
 				ACA5C9A72897EF0400FBB4CF /* CalculatorButtonStyle.swift in Sources */,
-				ACA5C99C289698FC00FBB4CF /* Calculator.swift in Sources */,
+				ACA5C9B02898231700FBB4CF /* Calculator.swift in Sources */,
+				ACA5C99C289698FC00FBB4CF /* CalculatorView.swift in Sources */,
 				ACA5C9A2289699FA00FBB4CF /* Digit.swift in Sources */,
 				ACA5C9AC2897F9E200FBB4CF /* Constants.swift in Sources */,
 			);

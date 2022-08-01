@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension Calculator {
+extension CalculatorView {
     struct CalculatorButton: View {
         
         let buttonType: ButtonType
@@ -33,6 +33,6 @@ extension Calculator {
 
 struct CalculatorButton_Previews: PreviewProvider {
     static var previews: some View {
-        Calculator.CalculatorButton(buttonType: .digit(.five))
+        CalculatorView.CalculatorButton(buttonType: .digit(.five))
     }
 }

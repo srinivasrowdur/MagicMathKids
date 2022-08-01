@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Calculator: View {
+struct CalculatorView: View {
     var buttonTypes: [[ButtonType]] {
             [[.allClear, .negative, .percent, .operation(.division)],
              [.digit(.seven), .digit(.eight), .digit(.nine), .operation(.multiplication)],
@@ -29,11 +29,11 @@ struct Calculator: View {
 
 struct Calculator_Previews: PreviewProvider {
     static var previews: some View {
-        Calculator()
+        CalculatorView()
     }
 }
 
-extension Calculator {
+extension CalculatorView {
     
     private var displayText: some View {
         Text("0")
