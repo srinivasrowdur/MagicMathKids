@@ -25,7 +25,7 @@ enum ButtonType: Hashable, CustomStringConvertible {
             case .operation(let operation):
                 return operation.description
             case .negative:
-                return "±"
+                return "+/-"
             case .percent:
                 return "%"
             case .decimal:
